@@ -17,5 +17,11 @@ class Settings:
     GROQ_MODEL = "llama-3.3-70b-versatile"
     GROQ_FALLBACK_API_KEY = os.getenv("GROQ_FALLBACK_API_KEY")
 
+    # --- LLM GATEWAY (PORTKEY) ---
+    PORTKEY_CONFIG_ID = os.getenv("PORTKEY_CONFIG_ID")
+    PORTKEY_API_KEY = os.getenv("PORTKEY_API_KEY")
+    GROQ_SLUG =  "rag1"     # primary: @rag1/llama-3.3-70b-versatile
+    GROQ_SLUG_2 = "rag2"  # fallback: @rag2/llama-3.1-8b-instant
+
 
 settings = Settings()
